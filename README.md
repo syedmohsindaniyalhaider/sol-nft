@@ -1,1 +1,2 @@
-# sol-nft
+## Solana NFT Marketplace
+'npm run start' to run the app
