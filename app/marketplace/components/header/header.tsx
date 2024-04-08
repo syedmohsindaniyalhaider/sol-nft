@@ -3,7 +3,7 @@ import "./header.css";
 import Display from "./images/darkDisplay.svg";
 import lmDisplay from "./images/lightDisplay.svg";
 import Notifications from "./images/Notifications.svg";
-import Avatar from "./images/Avatar.svg";
+import Avatar from "../../../../public/icon.png";
 
 import {
   WalletDisconnectButton,
@@ -41,12 +41,12 @@ const Header = ({
   }
 
   return (
-    <header className="mb-4 flex flex-wrap lg:items-center lg:justify-between lg:w-full lg:my-[2rem]">
-      <input id={searchId} type="search" placeholder="Search..." />
+    <header className="mb-4 flex flex-wrap lg:items-center lg:justify-end lg:w-full lg:my-[2rem]">
+      {/* <input id={searchId} type="search" placeholder="Search..." /> */}
       <div className="img--container mt-4 lg:mt-0">
         <Image onClick={handleClick} src={displayIcon} alt="display" />
         <Image src={Notifications} alt="notifs" />
-        <Image src={Avatar} alt="user" />
+        <Image width={60} height={40} src={Avatar} alt="user" />
         <div className="flex flex-wrap gap-2">
           <WalletMultiButton />
           <WalletDisconnectButton />

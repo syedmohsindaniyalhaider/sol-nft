@@ -79,7 +79,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
       >
         <div className="flex flex-wrap lg:flex-nowrap justify-between mb-8 gap-4">
           <div className="text-center w-full text-white bg-[#6F4EF2] p-10 rounded-lg">
-            <p>32,900,335.35 BOMEOW</p>
+            <p>0 BOMEOW</p>
             <p>TOKEN BOMEOW STAKED</p>
           </div>
           <div
@@ -89,7 +89,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
                 : "text-center text-[#6F4EF2] bg-[#F9FAFB] w-full p-10 rounded-lg"
             }
           >
-            <p>32,900,335.35 BOMEOW</p>
+            <p>0 BOMEOW</p>
             <p>TOKEN VALUE LOCKED</p>
           </div>
           <div className="text-center text-white bg-[#6F4EF2] w-full p-10 rounded-lg">
@@ -137,7 +137,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr>
+                {/* <tr>
                   <td className="px-6 py-4 whitespace-no-wrap">John Doe</td>
                   <td className="px-6 py-4 whitespace-no-wrap">
                     john@example.com
@@ -147,7 +147,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
@@ -182,7 +182,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr>
+                {/* <tr>
                   <td className="px-6 py-4 whitespace-no-wrap">John Doe</td>
                   <td className="px-6 py-4 whitespace-no-wrap">
                     john@example.com
@@ -192,7 +192,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
@@ -227,7 +227,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
-                <tr>
+                {/* <tr>
                   <td className="px-6 py-4 whitespace-no-wrap">John Doe</td>
                   <td className="px-6 py-4 whitespace-no-wrap">
                     john@example.com
@@ -237,7 +237,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
                   <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>

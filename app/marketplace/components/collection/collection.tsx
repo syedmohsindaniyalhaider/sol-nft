@@ -49,9 +49,9 @@ const Collection = ({ displayMode }: { displayMode: string }) => {
                     : "p-4 text-white bg-[#6F4EF2] w-full rounded-lg"
                 }
               >
-                <p className="text-[24px] font-bold mb-2">16107</p>
+                <p className="text-[24px] font-bold mb-2">0</p>
                 <div className="flex justify-between">
-                  <p className="font-bold text-[14px]">TOTAL NFTS</p>
+                  <p className="font-bold text-[14px]">TOTAL Tokens</p>
                   <span className="text-[14px]">All</span>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const Collection = ({ displayMode }: { displayMode: string }) => {
                   : "divide-y divide-gray-200"
               }
             >
-              <tr>
+              {/* <tr>
                 <td className="px-6 py-4 whitespace-no-wrap">John Doe</td>
                 <td className="px-6 py-4 whitespace-no-wrap">
                   john@example.com
@@ -115,7 +115,7 @@ const Collection = ({ displayMode }: { displayMode: string }) => {
                 <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
                 <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
                 <td className="px-6 py-4 whitespace-no-wrap">123-456-7890</td>
-              </tr>
+              </tr> */}
             </tbody>
           </table>
         </div>

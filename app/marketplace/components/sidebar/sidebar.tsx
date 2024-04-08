@@ -10,6 +10,7 @@ import selectedDashboard from "./images/selectedDashBoard.svg";
 import selectedBid from "./images/selectedBid.svg";
 import selectedCollection from "./images/selectedCollection.svg";
 import selectedProfile from "./images/selectedProfile.svg";
+import Avatar from "../../../../public/icon.png";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -41,16 +42,16 @@ const Sidebar = ({
     <div
       className={
         displayMode === "dark"
-          ? "lg:mx-[12px] lg:my-[10px] lg:h-[93vh] py-12 rounded-lg lg:fixed lg:bg-[#1d1932] px-2 text-white"
-          : "lg:mx-[12px] lg:my-[10px] lg:h-[93vh] py-12 rounded-lg lg:fixed lg:bg-white px-2"
+          ? "lg:mx-[12px] lg:my-[10px] lg:h-[93vh] py-4 rounded-lg lg:fixed lg:bg-[#1d1932] px-2 text-white"
+          : "lg:mx-[12px] lg:my-[10px] lg:h-[93vh] py-4 rounded-lg lg:fixed lg:bg-white px-2"
       }
     >
       <div>
-        {/* <div id="logo">
-            <Image src={Logo} alt="logo" />
-          </div> */}
+        <div id="logo" className="hidden lg:flex justify-center">
+          <Image src={Avatar} width={80} className="mb-4" alt="logo" />
+        </div>
         <div className="flex flex-row lg:flex-col justify-between gap-[3rem] text-center">
-          <div className="hidden lg:block font-bold text-[14px]">Menu</div>
+          {/* <div className="hidden lg:block font-bold text-[14px]">Menu</div> */}
           <div
             className="hover:cursor-pointer hover:text-[#6F4EF2]"
             onClick={() => handleClick("Dashboard")}

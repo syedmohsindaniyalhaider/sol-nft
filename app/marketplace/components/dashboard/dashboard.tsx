@@ -1,7 +1,7 @@
 import "./dashboard.css";
 import Trending from "../trending/trending";
-import Featured from "../../../../public/cat-coming-soon.jpeg";
-import Avatar from "./images/Avatar.svg";
+import Featured from "../../../../public/bannerImage.jpeg";
+import Avatar from "../../../../public/icon.png";
 
 import Image from "next/image";
 
@@ -46,17 +46,17 @@ const Dashboard = ({
         <div id="explore" className={featuredClass}>
           <Image
             id="featured"
-            className="w-full"
+            className="w-full rounded-lg"
             src={Featured}
             alt="featured"
           />
           <div className="w-full ft--container">
             <div className="ft--user-container">
-              <Image src={Avatar} alt="avatar" />
-              <div>John Abraham</div>
+              <Image src={Avatar} width={70} alt="avatar" />
+              <div>$BOPUS</div>
               <div id="status"></div>
             </div>
-            <div className="ft--title">Brighten LQ</div>
+            <div className="ft--title">Book of Pussy Portal</div>
             <div className="ft--auction">
               <div>Auction time</div>
               <div id="current-bid">
@@ -78,13 +78,13 @@ const Dashboard = ({
       </div>
       <div className="label">
         <div>Trending Bids</div>
-        <div id="selector">
+        {/* <div id="selector">
           <div id="selected" className="selector--item">
             All
           </div>
           <div className="selector--item">Artwork</div>
           <div className="selector--item">Music</div>
-        </div>
+        </div> */}
       </div>
       <Trending displayMode={displayMode} data={data} />
     </main>
