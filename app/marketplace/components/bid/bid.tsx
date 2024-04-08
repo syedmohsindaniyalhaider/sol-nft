@@ -31,20 +31,28 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
   let bidClass;
   let panelClass: string;
 
-  if (displayMode === "dark") {
-    bidClass = "bids--container";
-    panelClass = "activity--panel";
-  } else {
-    bidClass = "bids--container-lm";
-    panelClass = "activity--panel-lm";
-  }
+  // if (displayMode === "dark") {
+  //   bidClass = "bids--container";
+  //   panelClass = "activity--panel";
+  // } else {
+  //   bidClass = "bids--container-lm";
+  //   panelClass = "activity--panel-lm";
+  // }
 
   return (
-    <main className={bidClass}>
+    <main
+      className={
+        displayMode === "dark"
+          ? "lg:flex lg:flex-col lg:h-[78rem] lg:w-[76.25rem]"
+          : "lg:flex lg:flex-col lg:h-[78rem] lg:w-[76.25rem]"
+      }
+    >
       <div>
-        <h1>Staking</h1>
+        <h1 className={displayMode === "dark" ? "text-white" : ""}>Staking</h1>
         <div className="label--container">
-          <div>Welcome to Staking</div>
+          <div className={displayMode === "dark" ? "text-white" : ""}>
+            Welcome to Staking
+          </div>
           <div id="label">
             <div id="home">Home</div>
             <div>{`>`}</div>
@@ -62,26 +70,44 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
         <h1>Active Bids</h1>
         <button>Place a Bid</button>
       </div> */}
-      <div className="bg-[#1D1932] rounded-lg px-[20px] py-[20px]">
-        <div className="flex justify-between mb-8 gap-4">
-          <div className="text-center w-full bg-[#6F4EF2] p-10 rounded-lg">
+      <div
+        className={
+          displayMode === "dark"
+            ? "bg-[#1D1932] rounded-lg px-[20px] py-[20px]"
+            : "bg-white rounded-lg px-[20px] py-[20px]"
+        }
+      >
+        <div className="flex flex-wrap lg:flex-nowrap justify-between mb-8 gap-4">
+          <div className="text-center w-full text-white bg-[#6F4EF2] p-10 rounded-lg">
             <p>32,900,335.35 BOMEOW</p>
             <p>TOKEN BOMEOW STAKED</p>
           </div>
-          <div className="text-center text-[#6F4EF2] bg-white w-full p-10 rounded-lg">
+          <div
+            className={
+              displayMode === "dark"
+                ? "text-center text-[#6F4EF2] bg-white w-full p-10 rounded-lg"
+                : "text-center text-[#6F4EF2] bg-[#F9FAFB] w-full p-10 rounded-lg"
+            }
+          >
             <p>32,900,335.35 BOMEOW</p>
             <p>TOKEN VALUE LOCKED</p>
           </div>
-          <div className="text-center bg-[#6F4EF2] w-full p-10 rounded-lg">
+          <div className="text-center text-white bg-[#6F4EF2] w-full p-10 rounded-lg">
             <p>0 BOMEOW / $0</p>
             <p>YOUR STAKE</p>
           </div>
-          <div className="text-center text-[#6F4EF2] bg-white w-full p-10 rounded-lg">
+          <div
+            className={
+              displayMode === "dark"
+                ? "text-center text-[#6F4EF2] bg-white w-full p-10 rounded-lg"
+                : "text-center text-[#6F4EF2] bg-[#F9FAFB] w-full p-10 rounded-lg"
+            }
+          >
             <p>0 BOMEOW / $0</p>
             <p>YOUR TOTAL REWARD</p>
           </div>
         </div>
-        <div className="mb-4">
+        <div className={displayMode === "dark" ? "text-white mb-4" : "mb-4"}>
           <p className="uppercase px-4 py-2">Active Pools</p>
           <div className="overflow-x-auto">
             <table className="table-auto min-w-full divide-y divide-gray-200">
@@ -126,7 +152,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
             </table>
           </div>
         </div>
-        <div className="mb-4">
+        <div className={displayMode === "dark" ? "text-white mb-4" : "mb-4"}>
           <p className="uppercase px-4 py-2">NFT Pools</p>
           <div className="overflow-x-auto">
             <table className="table-auto min-w-full divide-y divide-gray-200">
@@ -171,7 +197,7 @@ const Bid = ({ displayMode }: { displayMode: string }) => {
             </table>
           </div>
         </div>
-        <div>
+        <div className={displayMode === "dark" ? "text-white mb-4" : "mb-4"}>
           <p className="uppercase px-4 py-2">Closed Pools</p>
           <div className="overflow-x-auto">
             <table className="table-auto min-w-full divide-y divide-gray-200">

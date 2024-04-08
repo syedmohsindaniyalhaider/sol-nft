@@ -30,58 +30,48 @@ const Sidebar = ({
     changeComponent(component);
   };
 
-  let containerClass;
-  if (displayMode === "dark") {
-    containerClass = "sb--container";
-  } else {
-    containerClass = "sb--container-lm";
-  }
+  // let containerClass;
+  // if () {
+  //   containerClass = "sb--container";
+  // } else {
+  //   containerClass = "sb--container-lm";
+  // }
 
   return (
-    <nav className={containerClass}>
-      <div className="sb--icon-container">
-        <div id="logo">
-          <Image src={Logo} alt="logo" />
-        </div>
-        <div id="menu">
-          <Image
+    <div
+      className={
+        displayMode === "dark"
+          ? "lg:mx-[12px] lg:my-[10px] lg:h-[93vh] py-12 rounded-lg lg:fixed lg:bg-[#1d1932] px-2 text-white"
+          : "lg:mx-[12px] lg:my-[10px] lg:h-[93vh] py-12 rounded-lg lg:fixed lg:bg-white px-2"
+      }
+    >
+      <div>
+        {/* <div id="logo">
+            <Image src={Logo} alt="logo" />
+          </div> */}
+        <div className="flex flex-row lg:flex-col justify-between gap-[3rem] text-center">
+          <div className="hidden lg:block font-bold text-[14px]">Menu</div>
+          <div
+            className="hover:cursor-pointer hover:text-[#6F4EF2]"
             onClick={() => handleClick("Dashboard")}
-            src={
-              selectedComponent === "Dashboard" ? selectedDashboard : Dashboard
-            }
-            alt="icon"
-          />
-
-          <Image
+          >
+            Dashboard
+          </div>
+          <div
+            className="hover:cursor-pointer hover:text-[#6F4EF2]"
             onClick={() => handleClick("Bid")}
-            src={selectedComponent === "Bid" ? selectedBid : Bid}
-            alt="icon"
-          />
-          <Image
+          >
+            Staking
+          </div>
+          <div
+            className="hover:cursor-pointer hover:text-[#6F4EF2]"
             onClick={() => handleClick("Collection")}
-            src={
-              selectedComponent === "Collection"
-                ? selectedCollection
-                : Collection
-            }
-            alt="icon"
-          />
-          <Image
-            onClick={() => handleClick("Profile")}
-            src={selectedComponent === "Profile" ? selectedProfile : Profile}
-            alt="icon"
-          />
-          <Image
-            onClick={() => handleClick("Settings")}
-            src={Settings}
-            alt="icon"
-          />
-        </div>
-        <div id="logout">
-          <Image src={Logout} alt="icon" onClick={() => setOpen(!open)} />
+          >
+            NFTs
+          </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

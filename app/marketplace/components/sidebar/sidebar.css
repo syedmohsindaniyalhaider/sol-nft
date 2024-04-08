@@ -1,23 +1,23 @@
 .sb--container {
-  display: flex;
-  flex-direction: column;
-  width: 5rem;
+  /* display: flex; */
+  /* flex-direction: column; */
   background: #1d1932;
-  align-items: center;
+  /* align-items: center; */
   margin: 20px 10px;
   height: 93vh;
   position: fixed;
+  border-radius: 10px;
 }
 
 .sb--container-lm {
   display: flex;
   flex-direction: column;
-  width: 5rem;
   background: #ffffff;
   align-items: center;
   margin: 20px 10px;
   height: 93vh;
   position: fixed;
+  border-radius: 10px;
 }
 
 .sb--icon-container {

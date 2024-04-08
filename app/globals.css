@@ -17,17 +17,17 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 .App {
-  display: flex;
+  /* display: flex; */
   /* height: 67.5rem; */
   /* width: 120rem; */
   /* background-color: #131129; */
@@ -37,7 +37,7 @@ body {
 }
 
 .App-lm {
-  display: flex;
+  /* display: flex; */
   /* height: 67.5rem; */
   /* width: 120rem; */
   /* background-color: #bcbcbc; */
@@ -47,15 +47,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.pl-160 {
-  padding-left: 160px;
-}
+} */
 
 main button {
   width: 6.125rem;

@@ -86,21 +86,16 @@ const Marketplace: NextPage = () => {
     // fetchNfts().catch(console.error);
   }, []);
 
-  let containerClass;
-  if (displayMode === "dark") {
-    containerClass = "App";
-  } else {
-    containerClass = "App-lm";
-  }
-
   return (
-    <div className={containerClass}>
-      <Sidebar
-        selectedComponent={selectedComponent}
-        changeComponent={setSelectedComponent}
-        displayMode={displayMode}
-      />
-      <div className="container pl-160">
+    <div className={displayMode === "dark" ? "App lg:flex" : "App-lm lg:flex"}>
+      <div className="w-full">
+        <Sidebar
+          selectedComponent={selectedComponent}
+          changeComponent={setSelectedComponent}
+          displayMode={displayMode}
+        />
+      </div>
+      <div className="px-2">
         <Header displayMode={displayMode} setDisplayMode={setDisplayMode} />
         {selectedComponent === "Dashboard" && (
           <Collection displayMode={displayMode} />
